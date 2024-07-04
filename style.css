@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(190, 157, 163);
+    color: rgb(36, 35, 35);
+    min-height: 100vh;
+    line-height: 1.4;
+    display: grid;
+    place-items: center;
+}
+img {
+    max-width: 100%;
+    display: block;
+}
+h1, h2 {
+    font-weight: 500;
+}
+h1 {
+    color: rgb(5, 5, 5);
+    font-size: 2.8rem;
+}
+h2 {
+    color: brown;
+    margin-bottom: 1rem;
+}
+.recipe-steps {
+    margin: 1rem 0;
+}
+.recipe-nutrition {
+    margin-top: 1rem;
+}
+ul {
+    padding-left: 1.2rem;
+}
+ul li {
+    margin-bottom: 0.5rem;
+}
+ul li span {
+    margin-left: 1rem;
+    font-weight: 700;
+}
+hr {
+    margin: 1.5rem 0;
+    border: 1px solid rgb(112, 109, 109);
+}
+.container {
+    max-width: 800px;
+    background-color: #fff;
+    margin: 2rem;
+    border-radius: 1rem;
+}
+.container .img-recipe {
+    padding: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.recipe-description {
+    padding-bottom: 1rem;
+}
+.container .img-recipe img {
+    border-radius: 1rem;
+}
+.recipe-info {
+    padding: 0rem 2rem 2rem 2rem;
+}
+.recipe-preptime {
+    background-color: rgb(247, 233, 235);
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+.recipe-preptime h3 {
+    color: brown;
+    padding-bottom: 0.74rem
+}
+.list-instructions {
+    padding-left: 1.25rem;
+}
+.list-instructions li {
+    padding-left: 0.5rem;
+    line-height: 1.5;
+}
+.list-instructions li span {
+    font-weight: 600;
+}
+.recipe-nutrition .values {
+    margin-bottom: 1rem;
+}
+.nutrition-table .item {
+    padding: 0.75rem 2rem;
+    display: flex;
+    border-bottom: 1px solid rgb(194, 184, 184);
+}
+.nutrition-table .item:last-child {
+    border-bottom: 0;
+}
+.nutrition-table .item .amt {
+    color: brown;
+    font-weight: 600;
+}
+.nutrition-table .item > *{
+    width: 100px;
+    margin: auto;
+}
+.nutrition-table .item p {
+    margin-left: 1.5rem;
+}
+
+@media (max-width: 540px) {
+    h1 {
+        margin-top: 2rem;
+    }
+    .container {
+        margin: 0;
+    }
+    .container .img-recipe {
+        padding: 0;
+        border-radius: 0;
+    }
+    .container .img-recipe img {
+        border-radius: 0;
+    }
+}
